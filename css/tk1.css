@@ -1,0 +1,25 @@
+.table{
+    display: flex;
+    width: 50%;
+    margin: 10px auto;
+    text-align: center;
+}
+.table p{
+    margin: 0;
+    width: 100px;
+}
+form{
+    margin: 0 auto;
+}
+#input_form{
+    width: 50%;
+    margin: 0 auto;
+}
+#comment_free{
+    width: 200px;
+    height: 100px;
+}
+#send_btn{
+    text-align: center;
+    margin: 10px auto;
+}

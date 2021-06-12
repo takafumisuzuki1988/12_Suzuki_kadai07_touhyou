@@ -23,7 +23,6 @@ $comment = $_POST['comment'];
 // }
 
 $data = array(	
-		array("ID","名前","メール","評価","コメント"),
 		array(1,$name,$mail,$review,$comment),
 		);
  
@@ -45,9 +44,9 @@ fclose($fp);
 <h1>書き込みしました。</h1>
 <h2>./data/data.txt を確認しましょう！</h2>
 
-<!-- <ul>
-    <li><a href="index.php">戻る</a></li>
-</ul> -->
+<ul>
+    <li><a href="../12_Suzuki_kadai07_touhyou/">戻る</a></li>
+</ul>
 
 </body>
 </html>

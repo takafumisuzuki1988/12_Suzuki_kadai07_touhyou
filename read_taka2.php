@@ -7,19 +7,13 @@
 <body>
  
 <table border='1'>
-<tr><th>id</th><th>名前</th><th>メール</th><th>評価</th><th>コメント</th></tr>
+<tr><th>ID</th><th>名前</th><th>メール</th><th>評価</th><th>コメント</th></tr>
  
 <?php
 $file_path = 'data/table.csv';
-$utf_file = 'data/table_utf.csv';
 
-//文字化け対策としてSJISのデータをUTF-8に変換して保存
-// file_put_contents($utf_file, mb_convert_encoding(file_get_contents($file_path),'UTF-8','SJIS-WIN'));
+$fp  = fopen("$file_path","r");
 
-if( ($fp = fopen("$utf_file","r"))=== false ){
-	die("CSVファイル読み込みエラー");
-}
- 
 while (($array = fgetcsv($fp)) !== FALSE) {
 	
 	//空行を取り除く
@@ -29,7 +23,7 @@ while (($array = fgetcsv($fp)) !== FALSE) {
 	
 	echo "<tr>";
 	for($i = 0; $i < count($array); ++$i ){
-		$elem = nl2br(mb_convert_encoding($array[$i], 'UTF-8', 'SJIS-WIN'));
+		$elem = nl2br(mb_convert_encoding($array[$i], 'utf-8', 'sjis'));
 		$elem = $elem === "" ?  "&nbsp;" : $elem;
 		echo("<td>".$elem."</td>");
 	}
