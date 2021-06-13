@@ -1,12 +1,19 @@
+#title{
+    text-align: center;
+    font-size: 30px;
+    width: 30%;
+    margin: 0 auto;
+}
+
 .table{
     display: flex;
     width: 50%;
     margin: 10px auto;
-    text-align: center;
+    text-align: left;
 }
 .table p{
     margin: 0;
-    width: 100px;
+    width: 200px;
 }
 form{
     margin: 0 auto;
@@ -18,6 +25,9 @@ form{
 #comment_free{
     width: 200px;
     height: 100px;
+    box-sizing: border-box;
+    padding: 8px;
+
 }
 #send_btn{
     text-align: center;

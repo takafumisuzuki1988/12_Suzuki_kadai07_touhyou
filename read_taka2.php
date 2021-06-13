@@ -6,8 +6,8 @@
 </head>
 <body>
  
-<table border='1'>
-<tr><th>ID</th><th>名前</th><th>メール</th><th>評価</th><th>コメント</th></tr>
+<table border='5'>
+<tr><th>日時</th><th>名前</th><th>メール</th><th>お気に入り</th><th>評価</th><th>コメント</th></tr>
  
 <?php
 $file_path = 'data/table.csv';
@@ -23,7 +23,7 @@ while (($array = fgetcsv($fp)) !== FALSE) {
 	
 	echo "<tr>";
 	for($i = 0; $i < count($array); ++$i ){
-		$elem = nl2br(mb_convert_encoding($array[$i], 'utf-8', 'sjis'));
+		$elem = nl2br($array[$i]);
 		$elem = $elem === "" ?  "&nbsp;" : $elem;
 		echo("<td>".$elem."</td>");
 	}
