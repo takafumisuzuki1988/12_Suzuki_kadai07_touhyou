@@ -3,16 +3,16 @@ $name = $_POST['name'];
 $mail = $_POST['mail'];
 $like = $_POST['like'];
 $review = $_POST['review'];
-$comment = $_POST['comment'];
+$comment_g = $_POST['comment_g'];
+$comment_b = $_POST['comment_b'];
+
 
 // 文字列作成（日付）
 $time = date('y-m-d H:i');
 
 $data = array(	
-		array($time,$name,$mail,$like,$review,$comment),
+		array($time,$name,$mail,$like,$review,$comment_g,$comment_b),
 		);
-
-
 
 //ファイルを開く
 $fp = fopen('data/table.csv', 'a'); 

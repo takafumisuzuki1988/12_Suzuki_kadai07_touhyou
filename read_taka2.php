@@ -7,7 +7,7 @@
 <body>
  
 <table border='5'>
-<tr><th>日時</th><th>名前</th><th>メール</th><th>お気に入り</th><th>評価</th><th>コメント</th></tr>
+<tr><th>日時</th><th>名前</th><th>メール</th><th>お気に入り</th><th>評価</th><th>良かった点</th><th>悪かった点</th></tr>
  
 <?php
 $file_path = 'data/table.csv';

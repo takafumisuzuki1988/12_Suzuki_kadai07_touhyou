@@ -10,7 +10,8 @@ echo '<table border="1">
     <th>メール</th>
     <th>お気に入り</th>
     <th>評価</th>
-    <th>コメント</th>
+    <th>良かった点</th>
+    <th>悪かった点</th>
     </tr>';
 
 while($data = fgetcsv($fp)){

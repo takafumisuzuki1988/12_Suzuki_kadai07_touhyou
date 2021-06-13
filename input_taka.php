@@ -28,7 +28,10 @@
 		/1<input type="radio" name="review" value="1"><br>
 		</div>
 		<div class="table">
-		<p>コメント: </p><input type="textarea" name="comment" id="comment_free"><br>
+		<p>よかった点: </p><input type="textarea" name="comment_g" id="comment_good">
+		</div>
+		<div class="table">
+		<p>不満な点: </p><input type="textarea" name="comment_b" id="comment_bad">
 		</div>
 		<div id="send_btn">
 			<input type="submit" value="送信">

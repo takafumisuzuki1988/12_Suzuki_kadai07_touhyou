@@ -22,12 +22,15 @@ form{
     width: 50%;
     margin: 0 auto;
 }
-#comment_free{
+#comment_good{
     width: 200px;
     height: 100px;
-    box-sizing: border-box;
     padding: 8px;
-
+}
+#comment_bad{
+    width: 200px;
+    height: 100px;
+    padding: 8px;
 }
 #send_btn{
     text-align: center;
